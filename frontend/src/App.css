@@ -1,0 +1,172 @@
+/* App.css - Additional App-specific styles */
+
+.App {
+  min-height: 100vh;
+  direction: rtl;
+}
+
+/* Fix for RTL layout */
+.sidebar {
+  border-right: none;
+  border-left: 1px solid #e5e7eb;
+}
+
+.sidebar-link.active {
+  border-right: none;
+  border-left: 4px solid #7c3aed;
+}
+
+/* Ensure proper spacing in dashboard */
+.dashboard-container {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Table responsive improvements */
+.table-container {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Status badges consistent styling */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Button hover effects */
+.action-button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.action-button:hover {
+  text-decoration: underline;
+}
+
+/* Loading state improvements */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+/* Error state styling */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  color: #dc2626;
+}
+
+/* Empty state styling */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Form improvements */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+/* Tab styling */
+.tab-nav {
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 0;
+}
+
+.tab-button {
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-button.active {
+  border-bottom-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.tab-button:hover:not(.active) {
+  color: #6b7280;
+  border-bottom-color: #d1d5db;
+}
+
+/* Search bar improvements */
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding-right: 2.5rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+/* Mobile menu improvements */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .table-container {
+    margin: 0 -1rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+}
